@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    background: #f4f6f8;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.filter-box {
+    margin-bottom: 25px;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* GRID LAYOUT */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* CARD STYLE */
+.card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* TAGS */
+.tag {
+    padding: 5px 12px;
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+}
+
+.electronics {
+    background: #2563eb;
+}
+
+.clothing {
+    background: #16a34a;
+}
